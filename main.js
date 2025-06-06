@@ -81,3 +81,16 @@ userInput.addEventListener('keydown', (e) => {
     handleSend();
   }
 });
+
+
+// 페이지 로드 시 기본 안내 문구 출력
+window.addEventListener('DOMContentLoaded', () => {
+  const chatbox = document.getElementById('chatbox');
+  chatbox.innerHTML += `
+    <div class="text-left mb-2 text-gray-300">
+      안녕하세요! 👋<br>
+      저는 광신방송예술고등학교를 소개하는 챗봇이에요.<br>
+      궁금한 학과나 학교생활에 대해 질문해 주세요 😊
+    </div>
+  `;
+});

@@ -1,11 +1,18 @@
 /* style.css */
+
 body {
   background: linear-gradient(135deg, #f8cdda, #1d2b64);
+  background-size: cover;
   min-height: 100vh;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #fff;
   margin: 0;
   padding: 0;
+  font-family: 'Gowun Dodum', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
 }
 
 #chatbox {
@@ -13,26 +20,58 @@ body {
   backdrop-filter: blur(12px);
   border-radius: 16px;
   padding: 20px;
+  width: 90%;
   max-width: 700px;
-  margin: 40px auto;
+  height: 70vh;
   overflow-y: auto;
-  max-height: 80vh;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   color: #fff;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+input#userInput {
+  width: 70%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button#sendBtn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff33;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+button#sendBtn:hover {
+  background-color: #ffffff55;
 }
 
 .text-right {
   text-align: right;
+  margin: 6px 0;
 }
 
 .text-left {
   text-align: left;
+  margin: 6px 0;
 }
 
-input, button {
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-top: 10px;
+
+.text-left {
+  text-align: left;
+  margin: 6px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 80%;
 }
