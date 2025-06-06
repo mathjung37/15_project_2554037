@@ -1,0 +1,38 @@
+/* style.css */
+body {
+  background: linear-gradient(135deg, #f8cdda, #1d2b64);
+  min-height: 100vh;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#chatbox {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  overflow-y: auto;
+  max-height: 80vh;
+  color: #fff;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+input, button {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+}
